@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sliderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYp-J7-wsC">
+                                <rect key="frame" x="159" y="400" width="97" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jxb-nM-c07"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bb5-vB-0BQ">
+                                <rect key="frame" x="44" y="519" width="326" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="bUZ-bp-G7v"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5nz-8u-ksC"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8g-1d-OUx">
+                                <rect key="frame" x="186" y="316" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d8g-1d-OUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="272" id="66E-uM-ZDV"/>
+                            <constraint firstItem="KYp-J7-wsC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="NL0-sz-ByL"/>
+                            <constraint firstItem="bb5-vB-0BQ" firstAttribute="top" secondItem="KYp-J7-wsC" secondAttribute="bottom" constant="88" id="RE3-oy-i8R"/>
+                            <constraint firstItem="bb5-vB-0BQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="aZV-Um-suN"/>
+                            <constraint firstItem="KYp-J7-wsC" firstAttribute="top" secondItem="d8g-1d-OUx" secondAttribute="bottom" constant="63" id="htM-RM-hOY"/>
+                            <constraint firstItem="d8g-1d-OUx" firstAttribute="centerX" secondItem="KYp-J7-wsC" secondAttribute="centerX" id="lQq-0D-Z54"/>
+                            <constraint firstItem="d8g-1d-OUx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lnH-F9-TlK"/>
+                            <constraint firstItem="KYp-J7-wsC" firstAttribute="centerX" secondItem="bb5-vB-0BQ" secondAttribute="centerX" id="zrw-xE-s0Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelValue" destination="d8g-1d-OUx" id="uAl-yk-0Ou"/>
+                        <outlet property="sliderValue" destination="bb5-vB-0BQ" id="vKt-7O-jOM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
