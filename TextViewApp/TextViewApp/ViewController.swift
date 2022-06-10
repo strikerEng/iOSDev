@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
     
     /// Toggle between making the text view editable and uneditable
-    /// - Parameter sender: <#sender description#>
+    /// - Parameter sender: buttonObject 
     @IBAction func buttonTapped(_ sender: UIButton) {
         if textView.isEditable{
             textView.isEditable = false
