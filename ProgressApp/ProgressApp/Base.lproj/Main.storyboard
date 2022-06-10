@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProgressApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-Go-3iX">
+                                <rect key="frame" x="197" y="362" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lT-km-J0j">
+                                <rect key="frame" x="39" y="504" width="306" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XfC-nr-aIu">
+                                <rect key="frame" x="132" y="548" width="150" height="4"/>
+                            </progressView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Nlz-wX-BDB">
+                                <rect key="frame" x="160" y="579" width="94" height="32"/>
+                                <connections>
+                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YYl-Zu-dO4"/>
+                                </connections>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yit-PM-ZSg">
+                                <rect key="frame" x="164" y="421" width="86" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="runButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iwg-00-QXy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bo5-Go-3iX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="318" id="3nB-XY-KsH"/>
+                            <constraint firstItem="Bo5-Go-3iX" firstAttribute="centerX" secondItem="yit-PM-ZSg" secondAttribute="centerX" id="BUK-7W-ydO"/>
+                            <constraint firstItem="9lT-km-J0j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="ByT-jc-8H5"/>
+                            <constraint firstItem="XfC-nr-aIu" firstAttribute="centerX" secondItem="Nlz-wX-BDB" secondAttribute="centerX" id="FIc-vT-Us6"/>
+                            <constraint firstItem="XfC-nr-aIu" firstAttribute="top" secondItem="9lT-km-J0j" secondAttribute="bottom" constant="23" id="Sdp-Ks-cle"/>
+                            <constraint firstItem="9lT-km-J0j" firstAttribute="top" secondItem="yit-PM-ZSg" secondAttribute="bottom" constant="52" id="Tn1-u8-jKL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9lT-km-J0j" secondAttribute="trailing" constant="69" id="YkI-3d-iRX"/>
+                            <constraint firstItem="yit-PM-ZSg" firstAttribute="top" secondItem="Bo5-Go-3iX" secondAttribute="bottom" constant="39" id="kVG-Eo-oc3"/>
+                            <constraint firstItem="yit-PM-ZSg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="nDd-Fg-HHX"/>
+                            <constraint firstItem="Bo5-Go-3iX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pT5-7a-Lp3"/>
+                            <constraint firstItem="XfC-nr-aIu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="rNi-ol-HMe"/>
+                            <constraint firstItem="yit-PM-ZSg" firstAttribute="centerX" secondItem="XfC-nr-aIu" secondAttribute="centerX" id="sof-U0-TRM"/>
+                            <constraint firstItem="Nlz-wX-BDB" firstAttribute="top" secondItem="XfC-nr-aIu" secondAttribute="bottom" constant="27" id="wSq-wR-CzH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityView" destination="Bo5-Go-3iX" id="OZ8-un-uac"/>
+                        <outlet property="labelProgress" destination="9lT-km-J0j" id="Tw1-PC-h3M"/>
+                        <outlet property="progressView" destination="XfC-nr-aIu" id="0lM-MX-mkn"/>
+                        <outlet property="stepperObject" destination="Nlz-wX-BDB" id="pJA-lk-VU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
