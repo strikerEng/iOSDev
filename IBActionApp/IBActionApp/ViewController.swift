@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        labelResult.frame.size.width = 120 
+        labelResult.frame.size.width = 120
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
@@ -28,5 +28,12 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func buttonRespone(_ sender: UIButton) {
+        if let senderText = sender.titleLabel?.text{
+            labelResult.text = senderText
+        }else{
+            labelResult.text = "Default"
+        }
+    }
 }
 
