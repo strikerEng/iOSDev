@@ -41,7 +41,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell!
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedItem = petArray[indexPath.row]
         
+        let alert = UIAlertController(title: "Your choice", message: "\(selectedItem)", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+            action -> Void in
+        })
+        
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
 
 
