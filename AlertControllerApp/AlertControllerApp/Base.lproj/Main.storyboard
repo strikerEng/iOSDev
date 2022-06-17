@@ -36,12 +36,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="centerX" secondItem="veF-GU-0C0" secondAttribute="centerX" id="KPp-cG-QQS"/>
-                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kam-IT-HJv"/>
-                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="bNQ-DV-TH1"/>
-                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cHg-5k-p3Z"/>
-                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="389" id="jm8-nu-B2d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="veF-GU-0C0" secondAttribute="bottom" constant="214" id="o6A-hf-Oqa"/>
+                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="centerX" secondItem="veF-GU-0C0" secondAttribute="centerX" id="3f0-SW-j5x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="veF-GU-0C0" secondAttribute="bottom" constant="214" id="CUA-7X-M0p"/>
+                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="LHl-gi-1K9"/>
+                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="389" id="eTN-bJ-6I8"/>
+                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sIT-tT-ddc"/>
+                            <constraint firstItem="XFt-fX-2zZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sw2-4v-Wlg"/>
                         </constraints>
                     </view>
                 </viewController>
