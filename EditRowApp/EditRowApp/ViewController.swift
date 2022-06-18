@@ -86,7 +86,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .normal, title: "Delete \(self.petArray[indexPath.row])", handler: {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete \(self.petArray[indexPath.row])", handler: {
             (action, view, isComplete) in
             self.petArray.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
