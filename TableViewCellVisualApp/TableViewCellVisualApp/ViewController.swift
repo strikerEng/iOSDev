@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    // It seems as though the table view must be connected to this view controller even though it was left out of the instructions. As well as marking self -- this view controller -- as the delegate and data source for the table view. 
+    // It seems as though the table view must be connected to this view controller even though it was left out of the instructions. As well as marking self -- this view controller -- as the delegate and data source for the table view.
     @IBOutlet weak var tableView: UITableView!
     
     let mainArray = ["Shuttle Bus", "Hockey", "Meeting", "Shopping"]
