@@ -27,17 +27,32 @@
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="67.633928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="N7N-QM-Bmn">
             <objects>
-                <viewController id="Xqq-1z-aat" sceneMemberID="viewController">
+                <viewController id="Xqq-1z-aat" customClass="SecondViewController" customModule="SimpleNavigationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oow-4S-9Oh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdi-1E-fPG">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tv2-BH-6OI"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="Sdi-1E-fPG" firstAttribute="centerY" secondItem="Oow-4S-9Oh" secondAttribute="centerY" id="ALS-0X-QQ5"/>
+                            <constraint firstItem="Sdi-1E-fPG" firstAttribute="centerX" secondItem="Oow-4S-9Oh" secondAttribute="centerX" id="f8a-yf-d8v"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Qs-Ha-yKy"/>
+                    <connections>
+                        <outlet property="labelDispaly" destination="Sdi-1E-fPG" id="LDI-BD-IDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYh-Xx-4E0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,6 +16,7 @@
 		4DCE73C42860FB3C004667B4 /* SimpleNavigationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE73C32860FB3C004667B4 /* SimpleNavigationAppTests.swift */; };
 		4DCE73CE2860FB3C004667B4 /* SimpleNavigationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE73CD2860FB3C004667B4 /* SimpleNavigationAppUITests.swift */; };
 		4DCE73D02860FB3C004667B4 /* SimpleNavigationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE73CF2860FB3C004667B4 /* SimpleNavigationAppUITestsLaunchTests.swift */; };
+		4DCE73DD2860FE31004667B4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE73DC2860FE31004667B4 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4DCE73C92860FB3C004667B4 /* SimpleNavigationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNavigationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCE73CD2860FB3C004667B4 /* SimpleNavigationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNavigationAppUITests.swift; sourceTree = "<group>"; };
 		4DCE73CF2860FB3C004667B4 /* SimpleNavigationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNavigationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DCE73DC2860FE31004667B4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4DCE73AE2860FB3A004667B4 /* SceneDelegate.swift */,
 				4DCE73B02860FB3A004667B4 /* ViewController.swift */,
 				4DCE73B22860FB3A004667B4 /* Main.storyboard */,
+				4DCE73DC2860FE31004667B4 /* SecondViewController.swift */,
 				4DCE73B52860FB3C004667B4 /* Assets.xcassets */,
 				4DCE73B72860FB3C004667B4 /* LaunchScreen.storyboard */,
 				4DCE73BA2860FB3C004667B4 /* Info.plist */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCE73DD2860FE31004667B4 /* SecondViewController.swift in Sources */,
 				4DCE73B12860FB3A004667B4 /* ViewController.swift in Sources */,
 				4DCE73AD2860FB3A004667B4 /* AppDelegate.swift in Sources */,
 				4DCE73AF2860FB3A004667B4 /* SceneDelegate.swift in Sources */,
