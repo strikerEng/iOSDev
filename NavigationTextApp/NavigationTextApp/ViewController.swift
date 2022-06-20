@@ -16,7 +16,11 @@ class ViewController: UIViewController {
         // This is the title that will be shown by the back button if there is no custom button
         navigationItem.title = "Title text"
         
+        // color of the button
         navigationController?.navigationBar.tintColor = .red
+        
+        // color of the navigation bar
+        navigationController?.navigationBar.barTintColor = .brown
         
     }
     
