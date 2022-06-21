@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Orange-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TabBarApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,14 +18,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NOW-50-STC"/>
+                    <tabBarItem key="tabBarItem" title="Orange" selectedImage="First" id="NOW-50-STC"/>
                     <navigationItem key="navigationItem" id="YZA-Yg-VSe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1797.1014492753625" y="67.633928571428569"/>
         </scene>
-        <!--Item-->
+        <!--Blue-->
         <scene sceneID="ZWE-Wu-g5r">
             <objects>
                 <viewController id="Cwx-Ln-QC8" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                         <viewLayoutGuide key="safeArea" id="s8H-Xg-DLX"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="OfM-y1-v1Q"/>
+                    <tabBarItem key="tabBarItem" title="Blue" image="Second" id="OfM-y1-v1Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLX-z2-DZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,6 +61,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="First" width="25" height="25"/>
+        <image name="Second" width="25" height="25"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
