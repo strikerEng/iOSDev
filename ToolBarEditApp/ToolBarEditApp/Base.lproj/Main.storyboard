@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" id="v9g-Mv-2mW"/>
-                                    <barButtonItem width="75" style="plain" systemItem="fixedSpace" id="kKk-Jh-s7K"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LGQ-Di-6Ee"/>
                                     <barButtonItem title="Item" id="qo9-nz-zcq"/>
                                 </items>
                             </toolbar>
