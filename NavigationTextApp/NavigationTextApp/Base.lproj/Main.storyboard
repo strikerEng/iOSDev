@@ -49,6 +49,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WFD-Fm-sLs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HE4-fz-Jfe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
