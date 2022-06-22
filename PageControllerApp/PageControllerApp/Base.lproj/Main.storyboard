@@ -56,7 +56,7 @@
         <!--Page View Controller-->
         <scene sceneID="Wm7-3i-JfB">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="e2b-x2-Kud" customClass="PageViewController" customModule="PageControllerApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="e2b-x2-Kud" customClass="PageViewController" customModule="PageControllerApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ids-Tc-HZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-788" y="72"/>
