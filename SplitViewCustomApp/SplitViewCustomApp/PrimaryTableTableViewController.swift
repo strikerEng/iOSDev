@@ -50,12 +50,14 @@ class PrimaryTableTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Code called when to create the rows in the table view
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath)
         cell.textLabel?.text = self.petArray[indexPath.row]
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Before the showDetail segue is executed do the following code
         if segue.identifier == "showDetail"{
             if let indexPath = tableView.indexPathForSelectedRow{
                 let object = self.petArray[indexPath.row]

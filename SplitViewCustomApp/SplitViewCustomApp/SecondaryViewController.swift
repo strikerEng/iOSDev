@@ -23,6 +23,7 @@ class SecondaryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // set the text of the label object in the view
     func configureView(){
         if let label = petLabel {
             label.text = detailItem
