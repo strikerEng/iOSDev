@@ -11,6 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
 
     var window: UIWindow?
     
+    // Takes care of showing and hiding the detail view
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController else{
@@ -21,6 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
             return false
         }
         
+        // Check if the detailItem attribute is nil
+        // detailItem holds the datat to show in the secondary view controller
         if topAsDetailController.detailItem == nil{
             // return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded
             return true
@@ -35,7 +38,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
+        
         let splitVC = window!.rootViewController as! UISplitViewController
+        
+        // Specify this file as the split view controller's delegate
         splitVC.delegate = self
         
         let navigationVC = splitVC.viewControllers.last as? UINavigationController
