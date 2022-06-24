@@ -18,18 +18,21 @@ class ViewController: UIViewController {
 
     @IBAction func doButton(_ sender: UIButton) {
         let startTime = NSDate()
+        self.resultsTextView.text = ""
         
         let queue = DispatchQueue.global(qos: .default)
         queue.async {
-            self.resultsTextView.text = ""
             let fetchedData = self.fetchSomethingFromServer()
             let processedData = self.processData(fetchedData)
             let firstResult = self.calculateFirstResult(processedData)
             let secondResult = self.calculateSecondResult(processedData)
             let resultSummary = "First: [\(firstResult)]\n [\(secondResult)]"
             
-            // This code causes an error because we're making changes to the user interface outside of the main thread
-            self.resultsTextView.text = resultSummary
+            // To make sure we modify the user interface in a thread-safe manner we specify this code to ro=un on the main thread
+            DispatchQueue.main.async {
+                self.resultsTextView.text = resultSummary
+            }
+            
             let endTime = NSDate()
             
             print("Completed in \(endTime.timeIntervalSince(startTime as Date)) seconds")
