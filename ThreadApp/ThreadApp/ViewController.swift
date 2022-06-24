@@ -18,19 +18,22 @@ class ViewController: UIViewController {
 
     @IBAction func doButton(_ sender: UIButton) {
         let startTime = NSDate()
-        self.resultsTextView.text = ""
-        let fetchedData = self.fetchSomethingFromServer()
-        let processedData = self.processData(fetchedData)
-        let firstResult = self.calculateFirstResult(processedData)
-        let secondResult = self.calculateSecondResult(processedData)
-        let resultSummary = "First: [\(firstResult)]\n [\(secondResult)]"
         
-        self.resultsTextView.text = resultSummary
-        let endTime = NSDate()
-        
-        print("Completed in \(endTime.timeIntervalSince(startTime as Date)) seconds")
-        
-        
+        let queue = DispatchQueue.global(qos: .default)
+        queue.async {
+            self.resultsTextView.text = ""
+            let fetchedData = self.fetchSomethingFromServer()
+            let processedData = self.processData(fetchedData)
+            let firstResult = self.calculateFirstResult(processedData)
+            let secondResult = self.calculateSecondResult(processedData)
+            let resultSummary = "First: [\(firstResult)]\n [\(secondResult)]"
+            
+            // This code causes an error because we're making changes to the user interface outside of the main thread
+            self.resultsTextView.text = resultSummary
+            let endTime = NSDate()
+            
+            print("Completed in \(endTime.timeIntervalSince(startTime as Date)) seconds")
+        }
     }
     
     func fetchSomethingFromServer() -> String{
@@ -53,8 +56,6 @@ class ViewController: UIViewController {
         Thread.sleep(forTimeInterval: 4)
         return data.replacingOccurrences(of: "E", with: "e")
     }
-    
-    
     
 }
 
