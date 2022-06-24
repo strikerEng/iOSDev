@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-Rx-Kao">
                                 <rect key="frame" x="174" y="121" width="67" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="rBN-33-rPl"/>
+                                    <constraint firstAttribute="height" constant="31" id="qib-f4-vnS"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -31,34 +31,43 @@
                                 <rect key="frame" x="87" y="199" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="s98-A9-9IL"/>
+                                    <constraint firstAttribute="height" constant="128" id="1IW-by-JJi"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sqD-o5-0d5">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sqD-o5-0d5">
                                 <rect key="frame" x="148" y="433" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="q08-AA-Aem"/>
+                                </constraints>
                             </slider>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="5wj-Gq-HX1">
+                                <rect key="frame" x="197" y="535" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Adb-Kg-2Vx" firstAttribute="centerX" secondItem="sqD-o5-0d5" secondAttribute="centerX" id="FSk-ma-LCJ"/>
-                            <constraint firstItem="sqD-o5-0d5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Fab-P0-YGF"/>
-                            <constraint firstItem="sqD-o5-0d5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R5i-mh-Cpq"/>
-                            <constraint firstItem="Adb-Kg-2Vx" firstAttribute="top" secondItem="Ina-Rx-Kao" secondAttribute="bottom" constant="47" id="ZVb-ig-18l"/>
-                            <constraint firstItem="Ina-Rx-Kao" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="gGU-bK-0Zp"/>
-                            <constraint firstItem="Ina-Rx-Kao" firstAttribute="centerX" secondItem="Adb-Kg-2Vx" secondAttribute="centerX" id="hgJ-A4-Ccp"/>
-                            <constraint firstItem="Ina-Rx-Kao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lVq-rL-chw"/>
-                            <constraint firstItem="Adb-Kg-2Vx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="nk1-tO-TYJ"/>
-                            <constraint firstItem="Ina-Rx-Kao" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="rMF-Sq-hrt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sqD-o5-0d5" secondAttribute="bottom" constant="400" id="zwy-Ig-HHR"/>
+                            <constraint firstItem="Ina-Rx-Kao" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="0eK-mJ-QPe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5wj-Gq-HX1" secondAttribute="bottom" constant="307" id="4RI-Hv-mw8"/>
+                            <constraint firstItem="sqD-o5-0d5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Ay9-qc-Qwy"/>
+                            <constraint firstItem="Adb-Kg-2Vx" firstAttribute="centerX" secondItem="sqD-o5-0d5" secondAttribute="centerX" id="Ia5-zO-Iwa"/>
+                            <constraint firstItem="Ina-Rx-Kao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJK-A7-R3C"/>
+                            <constraint firstItem="5wj-Gq-HX1" firstAttribute="top" secondItem="sqD-o5-0d5" secondAttribute="bottom" constant="73" id="WjD-Os-8Hh"/>
+                            <constraint firstItem="Adb-Kg-2Vx" firstAttribute="top" secondItem="Ina-Rx-Kao" secondAttribute="bottom" constant="47" id="egQ-kq-RHM"/>
+                            <constraint firstItem="sqD-o5-0d5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j3X-YA-rDG"/>
+                            <constraint firstItem="Ina-Rx-Kao" firstAttribute="centerX" secondItem="Adb-Kg-2Vx" secondAttribute="centerX" id="nGt-2H-DtZ"/>
+                            <constraint firstItem="Adb-Kg-2Vx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="p3K-KF-iWH"/>
+                            <constraint firstItem="Ina-Rx-Kao" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="w3S-lw-FZo"/>
+                            <constraint firstItem="sqD-o5-0d5" firstAttribute="centerX" secondItem="5wj-Gq-HX1" secondAttribute="centerX" id="xJ4-ZL-23C"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="resultsTextView" destination="Adb-Kg-2Vx" id="nLC-Aa-edH"/>
+                        <outlet property="spinnerView" destination="5wj-Gq-HX1" id="xqw-h8-r98"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

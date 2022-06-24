@@ -9,16 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var spinnerView: UIActivityIndicatorView!
     @IBOutlet weak var resultsTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.spinnerView.hidesWhenStopped = true
     }
 
     @IBAction func doButton(_ sender: UIButton) {
         let startTime = NSDate()
         self.resultsTextView.text = ""
+        self.spinnerView.startAnimating()
         
         let queue = DispatchQueue.global(qos: .default)
         queue.async {
@@ -31,6 +34,7 @@ class ViewController: UIViewController {
             // To make sure we modify the user interface in a thread-safe manner we specify this code to ro=un on the main thread
             DispatchQueue.main.async {
                 self.resultsTextView.text = resultSummary
+                self.spinnerView.stopAnimating()
             }
             
             let endTime = NSDate()
