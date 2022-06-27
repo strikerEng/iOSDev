@@ -43,6 +43,48 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func doGroupButton(_ sender: UIButton) {
+        let startTime = NSDate()
+        self.resultsTextView.text = ""
+        self.spinnerView.startAnimating()
+        
+        let queue = DispatchQueue.global(qos: .default)
+        queue.async {
+            let fetchedData = self.fetchSomethingFromServer()
+            let processedData = self.processData(fetchedData)
+            var firstResult: String!
+            var secondResult: String!
+            
+            // create a dispatch group
+            let group = DispatchGroup()
+            
+            // Independent async function call in the dispatch group
+            queue.async(group: group, execute: {
+                firstResult = self.calculateFirstResult(processedData)
+            })
+            
+            // Independent async function call in the dispatch group
+            queue.async(group: group, execute: {
+                secondResult = self.calculateSecondResult(processedData)
+            })
+            
+            // After both
+            group.notify(queue: queue, execute: {
+                let resultSummary = "First: [\(firstResult)]\n [\(secondResult)]"
+                // To make sure we modify the user interface in a thread-safe manner we specify this code to ro=un on the main thread
+                DispatchQueue.main.async {
+                    self.resultsTextView.text = resultSummary
+                    self.spinnerView.stopAnimating()
+                }
+                let endTime = NSDate()
+                print("Completed in \(endTime.timeIntervalSince(startTime as Date)) seconds")
+            })
+            
+            
+            
+        }
+    }
+    
     func fetchSomethingFromServer() -> String{
         Thread.sleep(forTimeInterval: 1)
         return "Hi, there"
