@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreDataApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eic-tt-dCl">
+                                <rect key="frame" x="12" y="257" width="84" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Data"/>
+                                <connections>
+                                    <action selector="addData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WR7-a1-TSh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter product name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ix2-zC-83n">
+                                <rect key="frame" x="20" y="81" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FtO-iI-3xH">
+                                <rect key="frame" x="20" y="148" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3L0-iF-v8P">
+                                <rect key="frame" x="20" y="476" width="374" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="a7S-al-5gk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aH-sb-9FY">
+                                <rect key="frame" x="294" y="257" width="100" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete Data"/>
+                                <connections>
+                                    <action selector="deleteData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Emt-UC-Xcf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eic-tt-dCl" firstAttribute="baseline" secondItem="1aH-sb-9FY" secondAttribute="baseline" id="05z-0z-YSf"/>
+                            <constraint firstItem="FtO-iI-3xH" firstAttribute="trailing" secondItem="1aH-sb-9FY" secondAttribute="trailing" id="Gpp-26-9iq"/>
+                            <constraint firstItem="FtO-iI-3xH" firstAttribute="leading" secondItem="3L0-iF-v8P" secondAttribute="leading" id="NHc-DZ-j0p"/>
+                            <constraint firstItem="FtO-iI-3xH" firstAttribute="top" secondItem="ix2-zC-83n" secondAttribute="bottom" constant="33" id="OtO-9i-PcN"/>
+                            <constraint firstItem="Eic-tt-dCl" firstAttribute="top" secondItem="FtO-iI-3xH" secondAttribute="bottom" constant="75" id="Pd5-63-aEj"/>
+                            <constraint firstItem="ix2-zC-83n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V4W-FA-iDs"/>
+                            <constraint firstItem="ix2-zC-83n" firstAttribute="leading" secondItem="FtO-iI-3xH" secondAttribute="leading" id="V6b-6e-itL"/>
+                            <constraint firstItem="ix2-zC-83n" firstAttribute="trailing" secondItem="FtO-iI-3xH" secondAttribute="trailing" id="Wfb-f3-dBL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3L0-iF-v8P" secondAttribute="bottom" constant="127" id="Z3r-cR-PcZ"/>
+                            <constraint firstItem="Eic-tt-dCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="fNI-xd-g7X"/>
+                            <constraint firstItem="1aH-sb-9FY" firstAttribute="trailing" secondItem="3L0-iF-v8P" secondAttribute="trailing" id="pmL-z6-XJe"/>
+                            <constraint firstItem="ix2-zC-83n" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="v7k-DV-WgA"/>
+                            <constraint firstItem="ix2-zC-83n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="vQz-Fp-7Th"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayPriceDetails" destination="3L0-iF-v8P" id="Rsg-rH-916"/>
+                        <outlet property="priceOfProduct" destination="FtO-iI-3xH" id="bFg-qd-0W3"/>
+                        <outlet property="productName" destination="ix2-zC-83n" id="TjN-Hs-08h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
