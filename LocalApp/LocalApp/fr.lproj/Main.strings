@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4h8-pP-b17"; */
+// Top label
+"4h8-pP-b17.text" = "Bonjour";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cDA-Wy-oOt"; */
+// Middle label
+"cDA-Wy-oOt.text" = "La Date";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "p3A-oS-bUH"; */
+// Bottom label
+"p3A-oS-bUH.text" = "Nombre";

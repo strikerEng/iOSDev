@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LocalApp
+
+  Created by Kire  on 7/9/22.
+  
+*/
+
+
+"[GREETING]" = "Bonjour";
+"[DATE]" = "La Date";
+"[NUMBER]" = "Nombre";
+"[FLAG]" = "franceFlag";
